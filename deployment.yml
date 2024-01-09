@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: spring-dep
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: mysb
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: pod-mysb
-        image: kkankkandev/spring:31
+        image: kkankkandev/spring:9
         ports:
         - containerPort: 8085
 ---
@@ -30,4 +30,3 @@ spec:
   - nodePort: 31400
     port: 8085
     targetPort: 8085
-
