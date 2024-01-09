@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: pod-mysb
-        image: kkankkandev/spring:30
+        image: kkankkandev/spring:31
         ports:
         - containerPort: 8085
 ---
